@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-green-blue: #2f404f;
+  --mediume-green-blue: #3894a1;
+  --light-green: #c7dad3;
+  --gray: #f0f1ee;
+  --red-danger: #d90000;
+}
+body {
+  background-color: var(--gray);
+  height: 100vh;
+
+}

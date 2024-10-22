@@ -1,0 +1,3 @@
+## This project...
+
+Vite , React , TypeScript and TailwindCSS are used in this project.
