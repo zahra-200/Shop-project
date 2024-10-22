@@ -22,7 +22,7 @@ function Store() {
           </h1>
           <div className="grid justify-self-center justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-3">
             {products.map((item) => (
-              <Link target="_blank" key={item.id} to={`/product/${item.id}`}>
+              <Link key={item.id} to={`/product/${item.id}`}>
                 <ProductItem {...item} />
               </Link>
             ))}
