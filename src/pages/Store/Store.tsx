@@ -9,7 +9,6 @@ function Store() {
   const [products, setProducts] = useState<products[]>([]);
   useEffect(() => {
     getData().then((result) => {
-      
       setProducts(result);
     });
   }, []);
@@ -20,7 +19,7 @@ function Store() {
           <h1 className="my-4 font-extrabold tracking-wide  text-2xl text-[var(--dark-green-blue)] ">
             The latest products
           </h1>
-          <div className="grid justify-self-center justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-3">
+          <div className="grid justify-self-center gap-5 justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-3">
             {products.map((item) => (
               <Link key={item.id} to={`/product/${item.id}`}>
                 <ProductItem {...item} />

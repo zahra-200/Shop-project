@@ -4,7 +4,7 @@ type TProductItem = products;
 
 function ProductItem({image , price ,name ,category ,description }: TProductItem) {
   return (
-    <div className=" w-[300px] mb-6 h-[500px] flex flex-col shadow border rounded pb-3 text-[var(--dark-green-blue)] hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ">
+    <div className=" w-[300px] mb-6 h-[400px] flex flex-col shadow border rounded pb-3 text-[var(--dark-green-blue)] hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ">
       <div className="h-[70%] overflow-hidden">
         <img className="rounded-t w-full " src={image} alt="" />
       </div>

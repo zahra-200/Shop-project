@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const client = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://671a0fa8acf9aa94f6a8f077.mockapi.io/api/shop",
 });
 
 export async function getData() {
@@ -15,12 +15,12 @@ export async function getCategoryData() {
 
 export async function getProduct(id: string | number) {
   const { data } = await client(`/products/${id}`);
-
   return data;
 }
+
 export async function login(username: string, password: string) {
   const { data } = await client({
-    method: "post",
+    method: "post/",
     url: "/login",
     data: {
       username,

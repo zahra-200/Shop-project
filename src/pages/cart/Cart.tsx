@@ -75,14 +75,14 @@ function Cart() {
               Discount :
               <span className="font-bold text-[var(--mediume-green-blue)]">
                 {" "}
-                ${Total == 0 ? 0 : 500}
+                %{Total == 0 ? 0 : 5}
               </span>
             </h4>
             <h4 className="my-2">
               Total price :
               <span className="font-bold text-[var(--mediume-green-blue)]">
                 {" "}
-                ${Total > 0 ? Total - 500 : 0}
+                ${Total > 0 ? Total - Math.floor(Total * 0.05) : 0}
               </span>
             </h4>
           </div>

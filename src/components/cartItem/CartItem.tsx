@@ -20,6 +20,7 @@ function CartItem({ id, qty }: ICartItem) {
   const [SingleProduct, setSingleProduct] = useState<products>();
   useEffect(() => {
     getProduct(id).then((result) => {
+      
       setSingleProduct(result);
     });
   }, []);
